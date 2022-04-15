@@ -19,13 +19,19 @@
         </div>
         
 
-         <div class="iCountUp">
+   <div>
+   <h4>We connect customers with expert technicians.</h4>
+          <div class="control">
+        
+          <div class="iCountUp">
     <ICountUp
       :delay="delay"
       :endVal="endVal"
       :options="options"
       @ready="onReady"
+      class=""
     />
+    <p>registered technicians</p>
   </div>
      <div class="iCountUp">
     <ICountUp
@@ -34,6 +40,7 @@
       :options="options"
       @ready="andReady"
     />
+    <p>registered companies</p>
   </div>
   <div class="iCountUp">
     <ICountUp
@@ -42,7 +49,13 @@
       :options="options"
       @ready="weReady"
     />
+    <p>registered customers</p>
   </div>
+  <div>
+      <img src="../assets/images/mask1.png" alt="">
+  </div>
+       </div>
+   </div>
     </div>
 </template>
 
@@ -146,6 +159,50 @@
     font-size: 60px;
     line-height: 35px;
     color: #350B89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .iCountUp p{
+    width: 262px;
+    height: 35px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    color: #5007E0;
+    padding-top: 17px;
   }
 
+  .control{
+    background: #F5F3FF;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    place-items: center;
+    padding-left: 16rem;
+    margin-top: 40px;
+  }
+  .control img{
+    width: 126px;
+    height: 128px;
+  }
+
+  h4{
+      width: 100vw;
+      height: 35px;
+      font-family: 'Sofia Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 35px;
+      color: #7C7C7C;
+      text-align: center;
+      margin-top: 110px;
+  }
 </style>

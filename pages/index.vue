@@ -168,14 +168,14 @@ export default {
     {
       position: relative;
       top: 0;
-      left: 6em;
+      left: 3em;
       z-index: 2;
     }
      .fish
     {
       position: absolute;
       top: 13em;
-      left:  73em;
+      left:  70em;
       z-index: 1;
     }
      .fishe
