@@ -9,8 +9,8 @@
       </div>
       <ul>
           <li ><a href="/">Home</a></li>
-          <li style="color: #FFB74C;"><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="about">About</a></li>
+          <li style="color: #FFB74C;"><a href="contact">Contact</a></li>
       </ul>
 
       <div>
@@ -21,34 +21,37 @@
 
      <div class="body">
       <div>
-        <h1>Our Story</h1>
+        <h1>Contact Us</h1>
         <p>
-          Give your car the right service it needs with a unique automechanic 
-          shop that links you with the best, competent and effective tecnicians.
+          Have more questions or enquires? Send us a message and we’ll get back to you as soon as possible.
         </p>
 
         <button class="btn3">Get Started</button>
       </div>
-      <div>
-    <div>
-          <img src="../assets/images/Rectangle27.png" alt="" class="fishes">
-          <img src="../assets/images/man.png" alt="" class="fish">
-    </div>
-      </div>
-      <div>
-      <div style="margin-top: 7em">
-          <img src="../assets/images/Rectangle 27 (1).png" alt="" class="fishe">
-        <img src="../assets/images/woman.png" alt=""  class="fishing">
-      </div>
-      </div>
+     
+      <form action="">
+            <h3 >Send us a message</h3>
+            <div style="margin-bottom: 30px">
+                <label for="name">Your name</label> <br>
+            <input type="text">
+            </div>
+            <div style="margin-bottom: 30px">
+                    <label for="name">Your email</label> <br>
+            <input type="text">
+            </div>
+            <div>
+                    <label for="name">Your name</label> <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <button>Submit</button>
+      </form>
 
      </div>
   </div>
 
  
   </div>
-  <Mission/>
-        <Technisians/>
    
  </div>
 </template>
@@ -71,6 +74,7 @@ export default {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    margin-bottom: 240px;
   }
   .nav{
     display: flex;
@@ -154,7 +158,7 @@ export default {
       line-height: 31px;
       color: #DAD2EA;
       width: 617px;
-      padding-top: 60px;
+      padding-top: 20px;
   }
  .body img{
     width: 275px;
@@ -162,34 +166,68 @@ export default {
   
   }
  
-   .fishes
-    {
-      position: relative;
-      top: 0;
-      left: 0;
-      z-index: 2;
-    }
-     .fish
-    {
-      position: absolute;
-      top: 13em;
-      left:  67em;
-      z-index: 1;
-    }
-     .fishe
-    {
-      position: absolute;
-      top: 21em;
-      right: 17.6em;
-      z-index: 2;
-    }
-   
-     .fishing
-    {
-      position: relative;
-      top: 1em;
-      right:  4em;
-      z-index: 1;
-    }
+  form{
+    background: #FFFFFF;
+    box-shadow: 0px 12px 60px rgba(99, 45, 206, 0.08);
+    border-radius: 20px;
+    width: 570px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  h3{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    color: #26046A;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  input{
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box;
+    border-radius: 10px;width: 490px;
+    height: 55px;
+    
+  }
+  label{
+    
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #7C7C7C;
+    margin-bottom: 10px;
+
+  }
+
+  textarea{
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 490px;
+    height: 160px;
+  }
+
+  form button{
+    width: 490px;
+    height: 60px;
+    background: #FFB74C;
+    box-shadow: 0px 6px 50px rgba(74, 25, 172, 0.09);
+    border-radius: 30px 0px 30px 30px;
+    color: #fff;
+    margin-top: 40px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+  }
     
 </style>

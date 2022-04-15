@@ -30,7 +30,7 @@ export default {
             technician: [
                 {img:'Rectangle 5.png', name:'Jacob Jones',work: 'CEO at CleanMech'},
                 {img:'Rectangle 6.png', name:'Jenny Wilson',work: 'Technician at safeDrive'},
-                {img:'Rectangle 7.png', name:'Annette Black',work: 'Automechanic at BayWork'},
+                {img:'Rectangle 7.png', name:'Annette Black',work: 'Manager at mechatronics '},
                 {img:'lady.png', name:'Esther Howard',work: 'Automechanic at BayWork'}
 
             ]
