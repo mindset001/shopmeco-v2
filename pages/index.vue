@@ -5,7 +5,7 @@
   <div>
      <div class="nav">
          <div class="logo">
-        <img src="../assets/images/Mask group.png" alt="">
+        <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
       </div>
       <ul>
           <li style="color: #FFB74C;"><a href="/">Home</a></li>
@@ -14,8 +14,8 @@
       </ul>
 
       <div>
-          <button class="btn">Sign in</button>
-          <button class="btn2">Sign Up</button>
+          <a href="/login"><button class="btn">Sign in</button></a>
+          <a href="/signup"><button class="btn2">Sign Up</button></a>
       </div>
      </div>
 
@@ -27,7 +27,7 @@
           shop that links you with the best, competent and effective tecnicians.
         </p>
 
-        <button class="btn3">Get Started</button>
+        <a href="/started"><button class="btn3" >Get Started</button></a>
       </div>
       <div>
     <div>
@@ -168,29 +168,29 @@ export default {
     {
       position: relative;
       top: 0;
-      left: 0;
+      left: 6em;
       z-index: 2;
     }
      .fish
     {
       position: absolute;
       top: 13em;
-      left:  67em;
+      left:  73em;
       z-index: 1;
     }
      .fishe
     {
       position: absolute;
-      top: 23em;
-      right: 17.6em;
+      top: 26em;
+      right: 12.5em;
       z-index: 2;
     }
    
      .fishing
     {
       position: relative;
-      top: 3.5em;
-      right:  4em;
+      top: 5.5em;
+      left:1em;
       z-index: 1;
     }
     
