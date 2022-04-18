@@ -9,7 +9,8 @@
         <div class="right">
         <h4>Already have an account?<a href="/login"> Log In</a></h4>
         <h1>Get Started</h1>
-        <div class="one">
+        <a href="/individual">
+            <div class="one">
             <div>
                 <img src="../assets/images/Group 3702.png" alt="">
             </div>
@@ -21,7 +22,9 @@
                 <img src="../assets/images/Union.png" alt="">
             </div>
         </div>
-        <div class="two">
+        </a>
+        <a href="/business">
+            <div class="two">
             <div>
                 <img src="../assets/images/Group 3699.png" alt="">
             </div>
@@ -33,6 +36,7 @@
                 <!-- <img src="../assets/images/Union.png" alt=""> -->
             </div>
         </div>
+        </a>
         </div>
     </div>
 </template>

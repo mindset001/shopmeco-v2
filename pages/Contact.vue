@@ -14,8 +14,8 @@
       </ul>
 
       <div>
-          <button class="btn">Sign in</button>
-          <button class="btn2">Sign Up</button>
+          <a href="/login"><button class="btn">Sign in</button></a>
+          <a href="/started"><button class="btn2">Sign Up</button></a>
       </div>
      </div>
 
