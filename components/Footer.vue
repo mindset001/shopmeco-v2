@@ -1,5 +1,5 @@
 <template>
-    <div class="contain">
+    <div class="contain3">
         <div>
         <img src="../assets/images/Mask group.png" alt="">
         <p class="text">Give your car the right service it needs with a unique automechanic shop 
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
-    .contain{
+    .contain3{
         background: #26046A;
         display: flex;
         justify-content: space-between;

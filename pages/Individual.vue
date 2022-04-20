@@ -90,7 +90,7 @@
             </select>
             </div>
             <div style="margin-bottom: 30px">
-                    <label for="name">Required Services</label> <br>
+                    <label for="name">Your address</label> <br>
             <textarea name="" id="" cols="30" rows="10" placeholder="Enter your address"></textarea>
             </div>
             

@@ -52,7 +52,7 @@
 
  
   </div>
-   
+   <Footer/>
  </div>
 </template>
 

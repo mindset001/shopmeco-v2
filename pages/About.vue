@@ -49,6 +49,7 @@
   </div>
   <Mission/>
         <Technisians/>
+        <Footer/>
    
  </div>
 </template>

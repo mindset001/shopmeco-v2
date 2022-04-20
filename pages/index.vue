@@ -50,14 +50,16 @@
 
     <Brand/>
    <Service/>
+   <HomeCarousel/>
    <Testimony/>
-   
+   <Footer/>
  </div>
 </template>
 
 <script>
+import HomeCarousel from "~/components/HomeCarousel.vue";
 export default {
-  
+    components: { HomeCarousel }
 }
 </script>
 

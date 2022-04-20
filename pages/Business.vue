@@ -6,7 +6,7 @@
         <img src="../assets/images/Group 3721.png" alt="" class="img">
       </div>
         </div>
-        <div class="right">
+          <div class="right first">
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
@@ -53,6 +53,100 @@
         </div>
         
         </div>
+
+        <!-- workshoop info  -->
+         <div class="right second">
+        <div>
+            <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
+        </div>
+        <div class="step">
+        <h4>STEP 02/03</h4>
+        <h6>Workshop Info.</h6>
+        </div>
+        <div class="log">
+            <h1>Complete Your Profile</h1>
+        <p>Your details are required to set up your account and get you going.</p>
+        </div>
+        <div class="one">
+             <form action="">
+            <div style="margin-bottom: 30px">
+                <label for="name" >Your phone number</label> <br>
+            <input type="number" placeholder="Enter your phone number" required>
+            </div>
+            <div style="margin-bottom: 30px">
+                <label for="name" >Workshop name</label> <br>
+            <input type="number" placeholder="Enter your workshop name" required>
+            </div>
+            <div style="margin-bottom: 30px">
+                    <label for="name">Workshop address</label> <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your workshop address"></textarea>
+            </div>
+            
+              <div class="here">
+              <p>Need to complete profile later? <a href="">Click Here</a></p>
+              </div>
+            <button class="btn1">Save</button>
+            <div class="bot">
+              <img src="../assets/images/Group 3720.png" alt="">
+            </div>
+      </form>
+
+
+        </div>
+        
+        </div>
+        <!-- end of workshop info  -->
+
+        <!-- service info  -->
+        <div class="right third">
+        <div>
+            <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
+        </div>
+        <div class="step">
+        <h4>STEP 03/03</h4>
+        <h6>Service Info.</h6>
+        </div>
+        <div class="log">
+            <h1>Almost Done!</h1>
+        <p>Your details are required to get started with providing services.</p>
+        </div>
+        <div class="one">
+             <form action="">
+            <div style="margin-bottom: 30px">
+                <label for="name" >Workshop photo</label> <br>
+            <img src="../assets/images/Group 3719.png" alt="" >
+            </div>
+            
+            <div style="margin-bottom: 30px">
+                    <label for="name">Required Services</label> <br>
+            <select name="Car Model" id="" placeholder="select">
+                <option value="" style="color: #B5B5B5;">-- Select --</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+                <option value="">1998</option>
+            </select>
+            <p style="color: #5007E0;font-size: 14px;font-family: 'Sofia Pro';">Bodywork, airconditioning, automechanic</p>
+            </div>
+            
+              <div class="here">
+              <p>Need to complete profile later? <a href="">Click Here</a></p>
+              </div>
+            <button class="btn1">Save</button>
+            <div class="bot">
+              <img src="../assets/images/Group 3720.png" alt="">
+            </div>
+      </form>
+
+
+        </div>
+        
+        </div>
+        <!-- end of service info -->
     </div>
 </template>
 
@@ -75,6 +169,16 @@
     .right{
         padding-left: 100px;
         padding-top: 50px;
+
+    }
+    .first{
+      display: none;
+    }
+    .second{
+      display: block;
+    }
+    .third{
+      display: none;
     }
     
 
@@ -105,7 +209,7 @@
         align-items: right;
     }
     .step h6{
-        width: 106px;
+        width: 126px;
         height: 19px;
         font-family: 'Inter';
         font-style: normal;
@@ -142,7 +246,7 @@
 
         padding-bottom: 55px;
     }
-      input{
+      input, select, textarea{
     border: 1px solid #7C7C7C;
     box-sizing: border-box;
     border-radius: 10px;
@@ -220,5 +324,18 @@
         height: 0px;
         border: 1px solid #7C7C7c;
         margin-top: 10px;
+    }
+    .bot{
+      align-items: center;
+      display: flex;
+      width:490px ;
+      justify-content: center;
+      height: 80px;
+    }
+    .here{
+      display: flex;
+      width:490px ;
+      justify-content: right;
+      margin-top: 4rem;
     }
 </style>
