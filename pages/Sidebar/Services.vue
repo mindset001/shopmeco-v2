@@ -5,6 +5,8 @@
         <div><img src="../Sidebar/images/Ellipse 2239.png" alt=""></div>
         
         </div>
+
+        <select-service/>
        
     </div>
 </template>
@@ -28,5 +30,6 @@
 .all{
 
   width: 80vw;
+  background: #E5E5E5;
 }
 </style>

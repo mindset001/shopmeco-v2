@@ -36,7 +36,7 @@
                 </div>
                 <div style="margin-top:30px; margin-left:20px;">
                     <button class="btn1">BOOK NOW</button>
-                    <button class="btn2">REVIEW</button>
+                    <button class="btn2" @click="review = true">REVIEW</button>
                 </div>
             </div>
 
@@ -81,12 +81,60 @@ No 22, Bolaji Mc Anthony way, opposite Law School, Ikeja, Lagos State.</p>
                             <div class="map"><img src="../Sidebar/images/Group 3747.png" alt=""></div>
                     </div>
                 </div>
+
+                <!-- <detail-carousel class="car"/> -->
+
+                            <!-- modal popup  -->
+                            <div v-if="review" >
+                                     <transition name="modal">
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+             <div class="flex justify-between">
+                <p>Review</p>
+             <button @click="review = false">X</button>
+             </div>
+
+             <h5>How would you rate your experience with CleanMech?</h5>
+             <div>
+                <img src="../Sidebar/images/Group 1000004186.png" alt="">
+             </div>
+
+             <h6>Your Review</h6>
+             <textarea name="" id="" cols="30" rows="10"></textarea>
+             <button class="btn">send</button>
+            </div>
+          </div>
+        </div>
+      </transition>
+                            </div>
+
+                            
+                       
+
+                    
        
     </div>
 </template>
 
+        <script>
+        export default {
+            data() {
+                return {
+                    review: false
+                }
+            },
+
+            
+        }
+        </script>
+
 <style scoped>
 
+        .review{
+            display: none;
+        }
     input{
   width: 660px;
   height: 47px;
@@ -104,6 +152,7 @@ No 22, Bolaji Mc Anthony way, opposite Law School, Ikeja, Lagos State.</p>
 .all{
 
   width: 80vw;
+  height: auto;
 }
 h3{
     width: 1420px;
@@ -276,4 +325,68 @@ h5{
     width: 400px;
     padding-top: 10px;
 }
+
+textarea{
+    width: 454px;
+    height: 165px;
+    border: 1px solid #D4CCFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 600px;
+  height: 494px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.modal-mask .btn{
+    width: 193px;
+    height: 50px;
+    background: #5007E0;
+    border-radius: 7.57143px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.modal-mask p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1F1F1F;
+}
+
+h5{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
 </style>

@@ -13,8 +13,17 @@
        </div>
 
        <side-carousel/>
+       <HomeService/>
     </div>
 </template>
+
+
+<script>
+// import HomeService from "~/components/HomeService.vue"
+export default {
+  
+}
+</script>
 
 <style>
 

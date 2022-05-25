@@ -140,6 +140,8 @@ padding-top: 170px;
     border-radius: 20px;
     padding: 55px 60px;
     margin-block: 40px;
+    margin-top: 100px;
+    margin-bottom: -10px;
 }
 h2{
     font-family: 'Sofia Pro';
