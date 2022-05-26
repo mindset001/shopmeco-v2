@@ -35,7 +35,7 @@
                     shop that links you with the best, competent and effective tecnicians.</p>
                 </div>
                 <div style="margin-top:30px; margin-left:20px;">
-                    <button class="btn1">BOOK NOW</button>
+                    <button class="btn1" @click="book = true">BOOK NOW</button>
                     <button class="btn2" @click="review = true">REVIEW</button>
                 </div>
             </div>
@@ -85,7 +85,7 @@ No 22, Bolaji Mc Anthony way, opposite Law School, Ikeja, Lagos State.</p>
                 <!-- <detail-carousel class="car"/> -->
 
                             <!-- modal popup  -->
-                            <div v-if="review" >
+                            <div v-if="review" class="check">
                                      <transition name="modal">
         <div class="modal-mask">
           <div class="modal-wrapper">
@@ -110,6 +110,56 @@ No 22, Bolaji Mc Anthony way, opposite Law School, Ikeja, Lagos State.</p>
       </transition>
                             </div>
 
+                            <!-- book now carousel  -->
+
+                                <div v-if="book" class="book">
+                                     <transition name="modal">
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container book">
+
+             <div class="flex justify-between">
+                <p>Payment</p>
+                
+             <button @click="book = false">X</button>
+             </div>
+
+             <h4>
+                Enter your card details to complete the service rendered.</h4>
+             <div>
+                <h5>Your total is <span style="color: #5007E0">#2,500.00</span></h5>
+             </div>
+
+             <form action="">
+                <div>
+                <h6>Card Number</h6>
+             <input type="number" placeholder="XXXX XXXX XXXX XXXX">
+             </div>
+              <div>
+                <h6>Card Name</h6>
+             <input type="number" placeholder="XXXX XXXX XXXX XXXX">
+             </div>
+
+              <div class="card">
+                <div>
+                        <h6>Card Number</h6>
+             <input type="date" placeholder="MM/YYY">
+                </div>
+
+                 <div>
+                        <h6>Card Number</h6>
+             <input type="number" placeholder="XXX" length = 3>
+                </div>
+             </div>
+              <button class="btn">Pay</button>
+             </form>
+            
+            </div>
+          </div>
+        </div>
+      </transition>
+                            </div>
+
                             
                        
 
@@ -122,7 +172,8 @@ No 22, Bolaji Mc Anthony way, opposite Law School, Ikeja, Lagos State.</p>
         export default {
             data() {
                 return {
-                    review: false
+                    review: false,
+                    book: false
                 }
             },
 
@@ -380,13 +431,36 @@ textarea{
     color: #1F1F1F;
 }
 
-h5{
+.book h5{
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
+.book h4{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #7C7C7C;
+}
+.book input{
+    width: 454px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+}
+.book{
+    width: 760px;
+    height: 625px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 </style>

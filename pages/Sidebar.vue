@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex min-h-screen">
   <!-- sidebar -->
-  <div class="bg-bermuda w-[276px] items-center flex flex-col mr-10" >
+  <div class="bg-bermuda w-[276px] items-center flex flex-col " >
     <div class="logo mt-10">
         <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
       </div>

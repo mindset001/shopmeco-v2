@@ -8,7 +8,7 @@
                    <div>
                      <div class="name">
                     
-                    <div class="flexy " style="margin-left: 50px;">{{doc.name}}
+                    <div class="flexy" style="margin-left: 50px;">{{doc.name}}
                     <div>
                         <p>4.5</p>
                     </div>
@@ -54,6 +54,15 @@
         </div>
 
         <h4>Rating</h4>
+        <div>
+             <v-slider
+      v-model="length"
+      color="#5007E0"
+      min="1"
+      max="5"
+    ></v-slider>
+    <div class="rate">{{length}}</div>
+        </div>
 
         <button>Apply Filters</button>
      </form>
@@ -74,9 +83,15 @@ export default {
                 {img:'Rectangle 5.png', name:'Car Cleaning',work: 'CleanMech', service: 'Auto-wash'},
                 {img:'Rectangle 6.png', name:'Wheel alignment',work: 'BayWork', service: 'Auto-repair'},
                 {img:'Rectangle 7.png', name:'Brakepad',work: 'SafeWork ', service: 'Auto-repair'},
-            ]
+            ],
+            length: 3,
+            rating: 3.5,
         }
+        
     },
+
+ 
+
     
 }
 </script>
@@ -102,6 +117,7 @@ export default {
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+        margin-top: 30px;
     }
 
     h1{
@@ -191,9 +207,10 @@ export default {
     }
     .flexy{
         display: flex;
-        width: 24vw;
+        width: 20vw;
         margin-bottom: 30px;
         justify-content: space-between;
+        padding-right:  30px;
         
     }
 
@@ -223,6 +240,28 @@ export default {
         padding-bottom: 20px;
         padding-top: 10px;
         border-radius: 10px;
+    }
+    .tech{
+        background-color: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 10px 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    .rate{
+        background: #F5F3FF;
+        border: 1px solid #D4CCFF;
+        box-shadow: 0px 12px 45px rgba(74, 25, 172, 0.03);
+        border-radius: 6px;
+        width: 52px;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70%;
+        margin-top: -20px;
+        margin-bottom: 20px;
     }
     
 
