@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="daddy">
  
      <div class="contain">
   <div>
@@ -67,6 +67,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
+  .daddy{
+    overflow: hidden;
+  }
   .contain{
     background: url(../assets/images/background.png);
     height: 80vh;

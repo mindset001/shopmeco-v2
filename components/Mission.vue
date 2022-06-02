@@ -184,7 +184,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    place-items: center;
     padding-left: 16rem;
     margin-top: 40px;
   }

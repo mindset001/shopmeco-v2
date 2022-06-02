@@ -138,7 +138,6 @@ padding-top: 170px;
     background: #7029FF;
     border-radius: 20px;
     padding: 55px 60px;
-    margin-block: 40px;
     margin-top: 100px;
     margin-bottom: -10px;
 }
