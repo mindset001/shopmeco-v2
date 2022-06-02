@@ -26,7 +26,7 @@
                         <p>Easily book services of our technicians from the comfort of your home without stress.</p>
                         </div>
                     </div>
-                    <div class="one" style="margin-top:60px;">
+                    <div class="one two" style="">
                         <div class="card">
                             <img src="../assets/images/Group 3683.png" alt="">
                         <h4>Real-time dispatch</h4>
@@ -106,6 +106,9 @@ export default {
     display: flex;
      justify-content: space-between;
 }
+.two{
+    margin-top:60px;
+}
 .card{
     width: 440px;
     height: 341px;
@@ -150,6 +153,55 @@ export default {
         text-align: center;
         letter-spacing: 0.01em;
         color: #7C7C7C;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        .brand h1{
+    width: 358px;
+    text-align: center;
+    height: 24px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #7C7C7C;
+    padding-bottom: 55.15px;
+}
+.brand img{
+    width: 358px;
+    height: 34px;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+}
+.two{
+    margin-top:10px;
+}
+.service{
+    height: auto;
+    margin-bottom: 0em;
+}
+.bg{
+
+    height: 2270px;
+    width: 100%;
+}
+.card{
+    width: 323px;
+    height: 341px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 33px;
+   
+
+  
+}
+
     }
 
 </style>

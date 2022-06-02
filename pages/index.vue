@@ -186,6 +186,7 @@ export default {
       top: 26em;
       right: 12.5em;
       z-index: 2;
+      display: block;
     }
    
      .fishing
@@ -194,6 +195,65 @@ export default {
       top: 5.5em;
       left:1em;
       z-index: 1;
+      display: block;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .nav{
+        display: none;
+      }
+
+      .body{
+        display: flex;
+        flex-direction: column;
+      }
+       .contain{
+        padding: 0 10px;
+         height: auto;
+  
+  }
+    h1{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    width: 359px;
+  }
+  .body p{
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 26px;
+      color: #DAD2EA;
+      width: 359px;
+      padding-top: 20px;
+  }
+
+   .fishe
+    {
+      position: absolute;
+      top: 34em;
+      right: 5em;
+      z-index: 2;
+      display: block;
+    }
+   
+     .fishing
+    {
+      position: relative;
+      top: -3em;
+      left:2em;
+      z-index: 1;
+      display: block;
+    }
+
+    .fishes
+    {
+      display: none;
+    }
+     .fish
+    {
+      display: none;
+    }
     }
     
 </style>
