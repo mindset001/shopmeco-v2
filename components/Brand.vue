@@ -184,7 +184,7 @@ export default {
 }
 .service{
     height: auto;
-    margin-bottom: 0em;
+    margin-top: -8em;
 }
 .bg{
 

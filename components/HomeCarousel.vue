@@ -98,6 +98,17 @@ p{
     padding-left: -2em;
     padding-bottom: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .firsty{
+    width: 15em;
+    text-align: center;
+    height: 58px;
+    font-size: 28px;
+    padding-bottom: 20px;
+    line-height: 38px;
+  }
+}
 </style>
 
     

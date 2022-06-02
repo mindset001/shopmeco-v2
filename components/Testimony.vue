@@ -51,4 +51,19 @@ export default {
         background: #FFB74C;
         border-radius: 30px 0px 30px 30px;
     }
+
+    @media only screen and (max-width: 600px) {
+          h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 58px;
+        text-align: center;
+        width: 308px;
+        color: #FFFFFF;
+        align-items: center;
+
+    }
+    }
 </style>

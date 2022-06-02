@@ -9,7 +9,7 @@
     <div class="parent">
     <div class="left">
             <div class="top">
-                <div style="display:flex; justify-content: space-between; align-items: center; ">
+                <div style="display:flex;  justify-content: space-between; align-items: center; " class="mobil">
                         <div>
                         
                         <h2>01.</h2>
@@ -124,8 +124,7 @@ padding-top: 170px;
 }
 .parent{
        
-        display: flex;
-        
+        display: flex;      
 }
 
 .left{
@@ -246,5 +245,110 @@ h1{
     line-height: 58px;
     color: #350B89;
     padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contain1{
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.parent{
+       
+        display: flex;
+        flex-direction: column;
+        
+}
+.left{
+    display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.top{
+    margin-left: 15px;
+    width: 380px;
+    height: 607px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.one{
+   margin-left: 15px;
+    width: 380px;
+    height: 607px; 
+     margin-bottom: 20px
+}
+.up{
+   margin-left: 15px;
+    width: 380px;
+    height: 607px; 
+     margin-bottom: 20px
+}
+.down{
+   margin-left: 15px;
+    width: 380px;
+    height: 607px; 
+     margin-bottom: 20px
+}
+
+.two{
+     padding: 30px 50px;
+    width: 380px;
+    height: 607px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px
+}
+.two p{
+    width: 300px;
+}
+
+
+h2{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 70px;
+}
+h4{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.01em;
+    margin-top: 20pxn;
+}
+p{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 20px;
+    width: 216px;
+}
+h1{
+    width: 720px;
+    height: 58px;
+    font-size: 28px;
+    padding-left: 20px;
+}
+.mobil{
+    display: flex;
+    flex-direction: column;
+}
+
 }
 </style>

@@ -85,5 +85,12 @@ export default {
         height: 40px;
         padding-left: 20px;
     }
+    @media only screen and (max-width: 600px) {
+        .contain3{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+        }
+    }
 
 </style>
