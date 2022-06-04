@@ -108,6 +108,18 @@ p{
     padding-bottom: 20px;
     line-height: 38px;
   }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  p{
+    text-align: left;
+    padding-left: 10px;
+    height: auto;
+    font-size: 16px;
+    width: 300px;
+    padding-top: 10px;
+  }
 }
 </style>
 

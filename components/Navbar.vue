@@ -1,7 +1,8 @@
 <template>
   <v-card
     class="mx-auto overflow-hidden"
-    height="400"
+    height="50"
+    flat
   >
     <v-app-bar
       color="deep-purple"
@@ -29,14 +30,21 @@
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
+            <li style="color: #FFB74C;"><a href="/">Home</a></li>
+          </v-list-item>
+
+            <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <li><a href="about">About</a></li>
           </v-list-item>
 
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-account</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
+            <li><a href="contact">Contact</a></li>
           </v-list-item>
         </v-list-item-group>
       </v-list>

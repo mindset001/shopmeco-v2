@@ -1,5 +1,8 @@
 <template>
+ <div>
+    <navbar class="mobile"/>
  <div class="daddy">
+
  
      <div class="contain">
   <div>
@@ -54,6 +57,7 @@
    <Testimony/>
    <Footer/>
  </div>
+ </div>
 </template>
 
 <script>
@@ -67,6 +71,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
+  
+    .mobile{
+      display: none;
+    }
   .daddy{
     overflow: hidden;
   }
@@ -234,7 +242,7 @@ export default {
    .fishe
     {
       position: absolute;
-      top: 34em;
+      top: 37em;
       right: 5em;
       z-index: 2;
       display: block;
@@ -256,6 +264,10 @@ export default {
      .fish
     {
       display: none;
+    }
+    .mobile{
+      display: block;
+     
     }
     }
     

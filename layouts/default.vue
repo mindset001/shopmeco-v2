@@ -1,5 +1,15 @@
 <template>
     <v-app>
-         <v-main><Nuxt /></v-main>
+         <v-main>
+         <!-- <navbar/> -->
+         <Nuxt />
+         
+         </v-main>
     </v-app>
 </template>
+
+<style>
+    .mobile{
+      display: none;
+    }
+</style>

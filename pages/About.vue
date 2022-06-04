@@ -1,5 +1,6 @@
 <template>
  <div>
+    <navbar/>
  
      <div class="contain">
   <div>
