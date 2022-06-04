@@ -1,6 +1,6 @@
 <template>
  <div>
-    <navbar/>
+    <navbar class="mobile"/>
  
      <div class="contain">
   <div>
@@ -64,7 +64,9 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
-
+      .mobile{
+      display: none;
+    }
   .contain{
     background: url(../assets/images/background.png);
     height: 80vh;
@@ -193,6 +195,15 @@ export default {
       top: 6em;
       left:  1em;
       z-index: 1;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .mobile{
+        display: block;
+      }
+      .nav{
+        display: none;
+      }
     }
     
 </style>

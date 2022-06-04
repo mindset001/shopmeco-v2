@@ -5,12 +5,14 @@
     flat
   >
     <v-app-bar
-      color="deep-purple"
+      color="#7029FF"
       dark
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Title</v-toolbar-title>
+       <div class="logo">
+        <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer
