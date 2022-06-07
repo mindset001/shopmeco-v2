@@ -3,12 +3,12 @@
         <div class="cover">
             <h2>Our Mission & Vision</h2>
             <div class="all">
-                <div style="margin-right: 60px" class="mission">
+                <div style="" class="mission">
                 <img src="../assets/images/Group 1000004166.png" alt="">
                 <p>Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.</p>
                 
                 </div>
-                <div class="mission" style="margin-left: 80px">
+                <div class="mission" style="">
                 <img src="../assets/images/Group 1000004166.png" alt="">
                 <p>Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.</p>
                 
@@ -113,6 +113,7 @@
         display:flex; 
         justify-content: space-around;
         margin-top: 40px;
+        margin-right: 60px
 
     }
 
@@ -204,4 +205,40 @@
       text-align: center;
       margin-top: 110px;
   }
+
+    @media only screen and (max-width: 600px) {
+
+           .all{
+            display:flex; 
+            flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
+          .mission{
+        display:flex; 
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-right: 0px
+
+    }
+     .mission   p{
+        width: 290px;
+        font-size: 20px;
+      
+    }
+
+    .control{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: space-between;
+      padding: 0 50px;
+      
+    }
+    .control img{
+      display: none;
+    }
+     
+
+    }
 </style>

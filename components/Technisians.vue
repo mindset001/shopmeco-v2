@@ -100,4 +100,24 @@ export default {
         padding: 18px 40px 17px;
         color: #fff;
     }
+
+      @media only screen and (max-width: 600px) {
+         .tech {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+    .trust{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+         width: 401px;
+    }
+    h3{
+       width: 300px;
+       font-size: 24px; 
+    }
+      }
 </style>

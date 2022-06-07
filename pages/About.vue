@@ -204,6 +204,59 @@ export default {
       .nav{
         display: none;
       }
+       .body{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+   .contain{
+    background: url(../assets/images/background.png);
+    height: auto;
+    padding: 0 20px;
+    padding-top: 15px;
+   
+  }
+
+   .body p{
+
+      font-family: 'Sofia Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #DAD2EA;
+      width: 327px;
+      padding-top: 60px;
+  }
+  .fishes
+    {
+     
+      display: none;
+    }
+     .fish
+    {
+     
+      display: none;
+
+    }
+     .fishe
+    {
+      position: absolute;
+      top: 36em;
+      right: 5.5em;
+      z-index: 2;
+    }
+   
+     .fishing
+    {
+      position: relative;
+      top: 0em;
+      left:  1em;
+      z-index: 1;
+    }
     }
     
 </style>

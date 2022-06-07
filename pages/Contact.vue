@@ -61,7 +61,20 @@ export default {
   
 }
 </script>
-
+form button{
+    width: 490px;
+    height: 60px;
+    background: #FFB74C;
+    box-shadow: 0px 6px 50px rgba(74, 25, 172, 0.09);
+    border-radius: 30px 0px 30px 30px;
+    color: #fff;
+    margin-top: 40px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+  }
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
@@ -228,6 +241,49 @@ export default {
     font-weight: 500;
     font-size: 25px;
     line-height: 25px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav{
+      display: none;
+    }
+    .body{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+      .contain{
+    height: auto;
+    padding: 0 10px;
+    padding-top: 15px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 240px;
+    overflow: hidden;
+  }
+  .btn3{
+    margin-bottom: 20px;
+  }
+  .body p{
+    width: 400px;
+    font-size: 20px;
+  }
+  form{
+    width: 390px;
+  }
+  input{
+    width: 350px;
+  }
+  textarea{
+    width: 350px;
+  }
+  form button{
+    width: 350px;
+  }
   }
     
 </style>
