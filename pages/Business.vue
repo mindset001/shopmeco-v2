@@ -7,6 +7,7 @@
       </div>
         </div>
           <div class="right first">
+          <navbar class="mobile"/>
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
@@ -56,6 +57,7 @@
 
         <!-- workshoop info  -->
          <div class="right second">
+         <navbar class="mobile"/>
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
@@ -99,6 +101,7 @@
 
         <!-- service info  -->
         <div class="right third">
+        <navbar class="mobile"/>
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
@@ -160,6 +163,9 @@
             width: 100vw;
             
     }
+    .mobile{
+      display: none
+    }
     .left{
         background: url('../assets/images/bg2.png');
         width: 724px;
@@ -175,10 +181,10 @@
       display: none;
     }
     .second{
-      display: block;
+      display: none;
     }
     .third{
-      display: none;
+      display: block;
     }
     
 
@@ -337,5 +343,56 @@
       width:490px ;
       justify-content: right;
       margin-top: 4rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .cover{
+        overflow: hidden;
+      }
+      .mobile{
+        display: block;
+        margin-bottom: 50px;
+      }
+      .left{
+        display: none
+      }
+      .right{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    input{
+      width: 360px;
+    }
+    select{
+      width: 360px;
+    }
+    .btn1{
+     width: 360px;
+    }
+   .log p{
+      width: 370px;
+      
+    }
+    .line{
+      width: 150px;
+    }
+    .btn2{
+      width: 360px;
+    }
+    .or{
+      width: 360px;
+    }
+    .log h1{
+      width: 360px;
+      margin-bottom: 60px;
+    }
+    .step{
+      padding-left: 183px;
+      width: 360px;
+      text-align: right;
+    }
+    textarea{
+      width: 360px;
+    }
     }
 </style>

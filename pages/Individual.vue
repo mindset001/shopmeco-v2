@@ -59,6 +59,7 @@
         <!-- Residency info  -->
 
         <div class="right second">
+        <navbar class="mobile"/>
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
@@ -113,6 +114,7 @@
         <!-- service info  -->
 
         <div class="right third">
+        <navbar class="mobile"/>
         <div>
             <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
         </div>
