@@ -7,6 +7,7 @@
       </div>
         </div>
         <div class="right">
+        <navbar class="mobile"/>
         <h4>Already have an account?<a href="/login"> Log In</a></h4>
         <h1>Get Started</h1>
         <a href="/individual">
@@ -47,8 +48,14 @@
 
     .cover{
             display: flex;
-            width: 100vw;
+            overflow: hidden;
             
+    }
+    .mobile{
+        display: none;
+        margin-bottom: 50px;
+        width: 100vw;
+        
     }
     .left{
         background: url('../assets/images/bg2.png');
@@ -117,8 +124,41 @@
         padding: 245px 76px 0px 76px;
     }
     @media only screen and (max-width: 600px) {
+        .mobile{
+            display: block;
+        }
         .left{
             display: none;
         }
+        .right{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+     .one{
+        width: 370px;
+        height: 115px;
+        margin-left: 20px;
+       
+    }
+
+    .two{
+        width: 370px;
+        height: 115px;
+        margin-left: 20px;
+        
+    }
+    h1{
+        margin-left: 20px;
+    }
+    h4{
+        padding-left: 30px;
+    }
+    h5{
+        padding-left: 10px;
+    }
+    p{
+        padding-left: 10px;
+    }
+      
     }
 </style>
