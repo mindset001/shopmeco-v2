@@ -1,5 +1,6 @@
 <template>
     <div class="cover">
+    
         <div class="left">
         <div class="logo">
         <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
@@ -7,8 +8,10 @@
       </div>
         </div>
         <div class="right">
+        <navbar class="mobile"/>
         <h4>Don't have an account?<a href="/started"> Register</a></h4>
         <div class="log">
+        
             <h1>Login</h1>
         <p>Login to your account and explore our services and proficient technicians.</p>
         </div>
@@ -55,6 +58,10 @@
             display: flex;
             width: 100vw;
             
+            
+    }
+    .mobile{
+      display: none;
     }
     .left{
         background: url('../assets/images/bg2.png');
@@ -183,5 +190,64 @@
         height: 0px;
         border: 1px solid #7C7C7c;
         margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .left{
+        display: none;
+      }
+      .right{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .cover{
+      overflow: hidden;
+    }
+    form{
+      margin: 0 10px;
+    }
+    input{
+       width: 390px;
+    }
+    .formy{
+      width: 390px;
+    }
+    .btn1{
+      width: 390px;
+    }
+    .btn2{
+      width: 390px;
+    }
+    .or{
+    display: flex;
+    align-content: center;
+    height: 40px;
+    justify-content: space-between;
+    width: 390px;
+    margin-top: 30px;
+  }
+    .line{
+        width: 152px;
+        height: 0px;
+        border: 1px solid #7C7C7c;
+        margin-top: 10px;
+    }
+     h4{
+      
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #7C7C7C;
+        padding-left: 60px;
+        margin-top: 30px;
+    }
+    .log {
+        margin: 30px 10px;
+    }
+    .mobile{
+      display: block;
+    }
     }
 </style>

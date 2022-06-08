@@ -116,4 +116,9 @@
     .img{
         padding: 245px 76px 0px 76px;
     }
+    @media only screen and (max-width: 600px) {
+        .left{
+            display: none;
+        }
+    }
 </style>
