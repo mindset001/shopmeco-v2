@@ -1,108 +1,101 @@
 <template>
-    <div class="contain1">
-        <div>
-        
-                 <h1>
-        Who can use Shopmeco?
-    </h1>
+<div class="contain1">
+    <h1>Who can use Shopmeco?</h1>
 
-    <div class="parent">
-    <div class="left">
-            <div class="top">
-                <div style="display:flex;  justify-content: space-between; align-items: center; " class="mobil">
-                        <div>
-                        
-                        <h2>01.</h2>
-                        <h4 style="color:#fff;">Car Owners</h4>
-                        <p>Give your car the right service it needs with a unique automechanic shop that 
-                        links you with the best, 
-                        competent and effective tecnicians.</p>
-                        
-                        </div>
-                        <div>
-                            <img src="../assets/images/Rectangle 79.png" alt="">
-                        </div>
+    <div class="container">
 
+        <div class="services">
+
+            <div class="article article1">
+                <div>     
+                    <h2>01.</h2>
+                    <h4 style="color:#fff;">Car Owners</h4>
+                    <p>
+                        Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.
+                    </p>     
                 </div>
-            
+                <div>
+                    <img src="../assets/images/Rectangle 79.png" alt="">
+                </div>
             </div>
 
-            <div class="bottom" >
-                    <div class="one">
-                    
-                             <div>
+            <div class="article article2">
+                <div>
                         
-                        <h2>04.</h2>
-                        <h4>Auto Part Sellers</h4>
-                        <p>Give your car the right service it needs with a unique automechanic shop that 
+                    <h2>02.</h2>
+                    <h4>Auto Part Sellers</h4>
+                    <p>
+                        Give your car the right service it needs with a unique automechanic shop that 
                         links you with the best, 
-                        competent and effective tecnicians.</p>
+                        competent and effective tecnicians.
+                    </p>
                         
-                        </div>
-                        <div>
-                            <img src="../assets/images/Rectangle 82.png" alt="">
-                        </div>
                     </div>
-
-                    <div class="two">
-                             <div>
-                        
-                        <h2>05.</h2>
-                        <h4>Auto-Service Provider</h4>
-                        <p>Give your car the right service it needs with a unique automechanic shop that 
-                        links you with the best, 
-                        competent and effective tecnicians.</p>
-                        
-                        </div>
-                        <div>
-                            <img src="../assets/images/Rectangle 83.png" alt="" style="padding-top:20px;">
-                        </div>
-                    </div>
-            </div>
-    
-    </div>
-
-    <div class="right">
-    
-            <div class="up">
-            <div>
-                            <img src="../assets/images/Rectangle 80.png" alt="" style="padding-bottom:30px;">
-                        </div>
-              <div>
-                        
-                        <h2 style="color:#1F1F1F;">02.</h2>
-                        <h4>Auto Repair Shops</h4>
-                        <p style="color:#7C7C7C; width:320px;">Give your car the right service it needs with a unique automechanic shop that 
-                        links you with the best, 
-                        competent and effective tecnicians.</p>
-                        
-                        </div>
-                        
-            
+                <div>
+                     <img src="../assets/images/Rectangle 82.png" alt="">
+                </div>
             </div>
 
-            <div class="down">
-            
-                      <div>
+            <div class="article article3">
+                <div>
                         
-                        <h2 style="color:#1F1F1F;">03.</h2>
-                        <h4>Auto Washing Center</h4>
-                        <p style="color:#7C7C7C; width:320px; padding-bottom:30px;">Give your car the right service it needs with a unique automechanic shop that 
+                    <h2>03.</h2>
+                    <h4>Auto-Service Provider</h4>
+                    <p>
+                        Give your car the right service it needs with a unique automechanic shop that 
                         links you with the best, 
-                        competent and effective tecnicians.</p>
+                        competent and effective tecnicians
+                    </p>
                         
-                        </div>
-                        <div>
-                            <img src="../assets/images/Rectangle 81.png" alt="">
-                        </div>
+                </div>
+                <div>
+                    <img src="../assets/images/Rectangle 83.png" alt="">
+                </div>
             </div>
-    </div>
+    </div> 
 
-    
-    </div>
+    <div class="right-grid">
+            <div class="article4 article">
+
+                <div>
+                    <img src="../assets/images/Rectangle 80.png" alt="">
+                </div>
+                <div>
+                        
+                    <h2 style="color:#1F1F1F;">04.</h2>
+                    <h4>Auto Repair Shops</h4>
+                    <p>
+                        Give your car the right service it needs with a unique automechanic shop that 
+                        links you with the best, 
+                        competent and effective tecnicians.
+                    </p>
+                        
+                </div>
+                
+            </div>
+
+            <div class="article5 article">
+                <div>
+                        
+                    <h2 style="color:#1F1F1F;">05.</h2>
+                    <h4>Auto Washing Center</h4>
+                    <p>
+                        Give your car the right service it needs with a unique automechanic shop that 
+                        links you with the best, 
+                        competent and effective tecnicians.
+                    </p>     
+                </div>
+                <div>
+                    <img src="../assets/images/Rectangle 81.png" alt="">
+                </div>
+            </div>
         </div>
-        
+
     </div>
+
+    
+
+</div>
 </template>
 
 <script>
@@ -116,39 +109,23 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
-.contain1{
-padding-top: 170px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.parent{
-       
-        display: flex;      
+*, 
+    ::before, 
+    ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.left{
-    display: grid;
-        grid-template-rows: 1fr 2fr;
-        margin-right: 40px;
-}
-.top{
-    width: 920px;
-    height: 339px;
-    background: #7029FF;
-    border-radius: 20px;
-    padding: 55px 60px;
-    margin-top: 100px;
-    margin-bottom: -10px;
-}
 h2{
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 70px;
     line-height: 70px;
-    color: #FFFFFF;
+    color: #1F1F1F;
 }
+
 h4{
     font-family: 'Sofia Pro';
     font-style: normal;
@@ -157,86 +134,21 @@ h4{
     line-height: 24px;
     align-items: center;
     letter-spacing: 0.01em;
-    color: #FFFFFF;
-    margin-top: 20pxn;
+    color: #1F1F1F;
 }
+
 p{
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 18px;
-    color: #F4F2FE;
+    line-height: 28px;
+    color: #7C7C7C;
     margin-top: 20px;
-    width: 396px;
-}
-.bottom{
-    display: flex;
-    
-    
+    width: 100%;
 }
 
-.one{
-    padding: 30px 50px;
-    width: 402px;
-    height: 607px;
-    background: #F4F2FE;
-    border: 1px solid #A594FE;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
-.two{
-    width: 478px;
-    height: 607px;
-    background: #F4F2FE;
-    border: 1px solid #A594FE;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 30px 50px;
-    margin-left: 40px;
-}
-
-.one p{
-    color: #7C7C7C;
-    width: 292px;
-    padding-bottom: 51px;
-
-}
-.one h2, h4{
-    color: #1F1F1F;
-}
-.two p{
-    color: #7C7C7C;
-    width: 368px;
-    padding-bottom: 51px;
-
-}
-.two h2, h4{
-    color: #1F1F1F;
-}
-.up{
-    width: 440px;
-    height: 458px;
-    padding: 30px 50px;
-    background: #F4F2FE;
-    border: 1px solid #A594FE;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-top: 40px;
-     margin-bottom: 40px;
-}
-.down{
-   
-    width: 440px;
-    height: 490px;
-    background: #FFCC6C;
-    border-radius: 20px;
-    padding: 30px 60px;
-   
-}
 h1{
-    width: 720px;
-    height: 58px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -244,110 +156,162 @@ h1{
     line-height: 58px;
     color: #350B89;
     padding-bottom: 40px;
+    width: 100%;
+    text-align: left;
 }
 
-@media only screen and (max-width: 600px) {
-    .contain1{
-    padding-top: 170px;
+img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.contain1{
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 1.5rem;
+}
+
+.services {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    place-items: start;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 400px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.right-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: 550px 1fr;
+}
+
+.article {
+    max-width: 100%;
+    height: 100%; 
+    padding: 30px;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-.parent{
-       
-        display: flex;
-        flex-direction: column;
-        
-}
-.left{
-    display: flex;
-        flex-direction: column;
-        margin-right: 40px;
-}
-
-.bottom{
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-.top{
-    margin-left: 15px;
-    width: 380px;
-    height: 607px;
-    box-sizing: border-box;
+    background: #F4F2FE;
+    border: 1px solid #A594FE;
     border-radius: 20px;
-}
-.one{
-   margin-left: 15px;
-    width: 380px;
-    height: 607px; 
-     margin-bottom: 20px
-}
-.up{
-   margin-left: 15px;
-    width: 380px;
-    height: 607px; 
-     margin-bottom: 20px
-}
-.down{
-   margin-left: 15px;
-    width: 380px;
-    height: 607px; 
-     margin-bottom: 20px
+    position: relative;
 }
 
-.two{
-     padding: 30px 50px;
-    width: 380px;
-    height: 607px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-left: 15px;
-    margin-bottom: 20px
-}
-.two p{
-    width: 300px;
+.article > div:last-child {
+    width: 100%;
+    height: 100%;
 }
 
-
-h2{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 70px;
-}
-h4{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 24px;
+.article1 {
+    background: #350B89;
+    grid-column: 1/3;
+    flex-direction: row;
+    padding: 2.5rem 1.9rem;
+    gap: 2.5rem;
     align-items: center;
-    letter-spacing: 0.01em;
-    margin-top: 20pxn;
 }
-p{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    margin-top: 20px;
-    width: 216px;
+
+.article1 h2, .article1 h4, .article1 p {
+    color: #FFFFFF;
+    padding-bottom: 1.5rem;
 }
-h1{
-    width: 720px;
-    height: 58px;
-    font-size: 28px;
-    padding-left: 20px;
+
+.article1 div {
+    flex-basis: 50%;
 }
-.mobil{
-    display: flex;
+
+.article1 div:first-child {
+    /* border: 1px solid red; */
+    max-width: 350px;
+}
+
+.article5 {
+    background: #FFCC6C;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .contain1 {
+        padding: 1rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article1 {
+        gap: 1rem;
+    }
+
+    .article1 img {
+        object-fit: fill;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contain1 {
+        padding: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+   .services, .right-grid,.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   }
+
+   .article1 {
     flex-direction: column;
+    grid-column: 1/2;
+    text-align: left;
+   }
+
+   .article1 div:first-child {
+    max-width: 100%;
+    }
+
+    .article1 h2, .article1 h4, .article1 p {
+    padding-bottom: inherit;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .services {
+        margin-top: 4rem;
+    }
+
+    .right-grid {
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    .article4 div:first-child {
+        order: 2;
+    }
+
+    
 }
+@media only screen and (max-width: 600px) {
+ h1 {
+    font-size: 30px;  
+ }
 
 }
 </style>

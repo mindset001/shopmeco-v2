@@ -1,155 +1,235 @@
 <template>
-    <div class="cover">
-        <div class="left">
+    <div class="container">
+      <navbar class="mobile-nav"/>
+      <div class="left-col">
         <div class="logo">
-        <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
-        <img src="../assets/images/Group 3721.png" alt="" class="img">
+          <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
+        </div>
+
+        <div class="quote">
+            <img src="../assets/images/Group 3721.png" alt="">
+        </div>
       </div>
+      
+      <div class="right-col first">
+        <!-- <navbar class="mobile-nav"/> -->
+        <div class="top-right">
+          <div class="btn-back">
+            <a href="/started" style="display:flex; align-items: center;">
+            <img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back
+          </a>
+          </div>
+          <div class="step">
+            <h4>STEP 01/03</h4>
+            <h6>Personal Info.</h6>
+          </div>
         </div>
-          <div class="right first">
-          <navbar class="mobile"/>
-        <div>
-            <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
-        </div>
-        <div class="step">
-        <h4>STEP 01/03</h4>
-        <h6>Personal Info.</h6>
-        </div>
-        <div class="log">
+
+        <div class="center-form">
+
+          <div class="log">
             <h1>Register Business Account</h1>
-        <p>Your details are required to set up your account and get you going.</p>
-        </div>
-        <div class="one">
-             <form action="">
-            <div style="margin-bottom: 30px">
-                <label for="name" >Your fullname<span style="color:red;">*</span></label> <br>
-            <input type="text" placeholder="Tolulope Ololade" required>
-            </div>
-            <div style="margin-bottom: 30px">
-                <label for="name" >Email address*</label> <br>
-            <input type="email" placeholder="Enter email address" required>
-            </div>
-            <div style="margin-bottom: 30px">
-                    <label for="name">Create password*</label> <br>
-            <input type="password" required>
-            </div>
-            <div class="formy">
-                    <div style="display:flex; align-items:center; justify-content: space-between; width:230px; color: #7C7C7C;">
-                        <input type="checkbox" name="" id=""  style="border:2px dotted #00f;display:block;background:red; width:20px" >I agree to terms & conditions
-                    </div>
-                    
-            </div>
+            <p>Your details are required to get started with providing services.</p>
+          </div>
 
-            <button class="btn1">Register Account</button>
-            <div class="or">
-                <div class="line"></div>
-                <div class="text">OR</div>
-                <div class="line"></div>
-            </div>
+          <div class="one">
+            <form action="">
 
-            <button class="btn2"><img src="../assets/images/Group 3707.png" alt=""></button>
-      </form>
-
-
-        </div>
-        
-        </div>
-
-        <!-- workshoop info  -->
-         <div class="right second">
-         <navbar class="mobile"/>
-        <div>
-            <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
-        </div>
-        <div class="step">
-        <h4>STEP 02/03</h4>
-        <h6>Workshop Info.</h6>
-        </div>
-        <div class="log">
-            <h1>Complete Your Profile</h1>
-        <p>Your details are required to set up your account and get you going.</p>
-        </div>
-        <div class="one">
-             <form action="">
-            <div style="margin-bottom: 30px">
-                <label for="name" >Your phone number</label> <br>
-            <input type="number" placeholder="Enter your phone number" required>
-            </div>
-            <div style="margin-bottom: 30px">
-                <label for="name" >Workshop name</label> <br>
-            <input type="number" placeholder="Enter your workshop name" required>
-            </div>
-            <div style="margin-bottom: 30px">
-                    <label for="name">Workshop address</label> <br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your workshop address"></textarea>
-            </div>
-            
-              <div class="here">
-              <p>Need to complete profile later? <a href="">Click Here</a></p>
+              <div class="form-input">
+                <label for="name" >
+                  Your fullname<span>*</span>
+                </label> 
+                <br>
+                <input type="text" placeholder="Tolulope Ololade" id="name" required>
               </div>
-            <button class="btn1">Save</button>
-            <div class="bot">
-              <img src="../assets/images/Group 3720.png" alt="">
-            </div>
-      </form>
+
+              <div class="form-input">
+                <label for="mail" >
+                  Email address<span>*</span>
+                </label> 
+                <br>
+                <input type="email" placeholder="Enter email address" id="mail" required>
+              </div>
+
+              <div class="form-input">
+                <label for="password">
+                  Create Password<span>*</span>
+                </label> 
+                <br>
+                <div class="password-field">
+                  <input type="password" placeholder="Enter password" id="password" required>
+                <button class="placeholder-span">Show</button>
+                </div>
+
+                <div class="formy">
+                  <div>
+                      <input type="checkbox" name="" id="" class="checkbox"> <span>I agree to <a href="#">terms & conditions</a>
+                        </span> 
+                  </div>
+
+                  <div>
+                    <a href="/">Forget Password?</a>
+                  </div>
+                </div>
+              </div>    
+
+              <button class=" btn btn1">Login</button>
+
+              <div class="or">
+                  <div class="line"></div>
+                  <div class="text">OR</div>
+                  <div class="line"></div>
+              </div>
+
+              <button class="btn btn2">
+                <img src="../assets/images/Group 3707.png" alt="">
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
 
 
-        </div>
-        
-        </div>
-        <!-- end of workshop info  -->
+        <!-- Residency info  -->
 
-        <!-- service info  -->
-        <div class="right third">
-        <navbar class="mobile"/>
-        <div>
-            <a href="/started" style="display:flex; align-items: center;"><img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back</a>
+      <div class="right-col second">
+        <!-- <navbar class="mobile-nav"/> -->
+
+        <div class="top-right">
+          <div class="btn-back">
+            <a href="/started" style="display:flex; align-items: center;">
+            <img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back
+          </a>
+          </div>
+          <div class="step">
+            <h4>STEP 02/03</h4>
+            <h6>Workshop Info.</h6>
+          </div>
         </div>
-        <div class="step">
-        <h4>STEP 03/03</h4>
-        <h6>Service Info.</h6>
+
+        <div class="center-form">
+
+          <div class="log">
+             <h1>Complete Your Profile</h1>
+            <p>Your details are required to get started with providing services.</p>
+          </div>
+
+          <div class="one">
+            <form action="">
+
+              <div class="form-input">
+                <label for="number" >
+                  Your phone number
+                </label> 
+                <br>
+                <input type="number" placeholder="Enter your phone number" id="number" required>
+              </div>
+
+              <div class="form-input">
+                <label for="workshop" >
+                  Workshop name
+                </label> 
+                <br>
+                <input type="text" placeholder="Enter your workshop name" id="workshop" required>      
+              </div>
+
+              <div class="form-input">
+                <label for="address">
+                  Your address
+                </label> 
+                <br>
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Enter your workshop address"></textarea>
+              </div> 
+
+              <div class="bottom-right">
+                <h4>Need to complete profile later? <a href="#">Click Here</a></h4>
+              </div>  
+
+              <button class=" btn btn1">Save & Continue</button>
+
+              <div class="bottom">
+                <img src="../assets/images/Group 3720.png" alt="">
+              </div>
+            </form>
+          </div>
+
         </div>
-        <div class="log">
+      </div>
+
+
+      <!-- service info  -->
+
+       <div class="right-col third">
+        <div class="top-right">
+          <div class="btn-back">
+            <a href="/started" style="display:flex; align-items: center;">
+            <img src="../assets/images/icon.png" alt="" style="width:20px; height:20px; margin-right: 10px;"> back
+          </a>
+          </div>
+          <div class="step">
+            <h4>STEP 03/03</h4>
+            <h6>Service Info.</h6>
+          </div>
+        </div>
+
+        <div class="center-form">
+
+          <div class="log">
             <h1>Almost Done!</h1>
-        <p>Your details are required to get started with providing services.</p>
-        </div>
-        <div class="one">
-             <form action="">
-            <div style="margin-bottom: 30px">
-                <label for="name" >Workshop photo</label> <br>
-            <img src="../assets/images/Group 3719.png" alt="" >
-            </div>
-            
-            <div style="margin-bottom: 30px">
-                    <label for="name">Required Services</label> <br>
-            <select name="Car Model" id="" placeholder="select">
-                <option value="" style="color: #B5B5B5;">-- Select --</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-                <option value="">1998</option>
-            </select>
-            <p style="color: #5007E0;font-size: 14px;font-family: 'Sofia Pro';">Bodywork, airconditioning, automechanic</p>
-            </div>
-            
-              <div class="here">
-              <p>Need to complete profile later? <a href="">Click Here</a></p>
+            <p>Your details are required to get started with providing services.</p>
+          </div>
+
+          <div class="one">
+            <form action="">
+
+              <div class="form-input">
+                <label for="photo" >
+                  Workshop photo
+                </label> 
+                <br>
+                <div class="photo-box">
+                  <!-- <img src="../assets/images/Group 3719.png" alt="" > -->
+
+                  <h4>Drag and drop or <a href="#">Browse</a></h4>
+                </div>
               </div>
-            <button class="btn1">Save</button>
-            <div class="bot">
-              <img src="../assets/images/Group 3720.png" alt="">
-            </div>
-      </form>
 
+              <div class="form-input">
+                <label for="model" >
+                  Car Model
+                </label> 
+                <br>
+                <select name="model" id="model">
+                  <option value="">-- Select --</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                  <option value="">1998</option>
+                </select>     
+              </div>
+             
+
+              <div class="bottom-right">
+                <h4>Need to complete profile later? <a href="#">Click Here</a></h4>
+              </div>  
+
+              <button class=" btn btn1">Save & Continue</button>
+
+              <div class="bottom">
+                <img src="../assets/images/Group 3720.png" alt="">
+              </div>
+            </form>
+          </div>
 
         </div>
-        
-        </div>
-        <!-- end of service info -->
+      </div>
+        <!-- end of service info  -->
     </div>
 </template>
 
@@ -158,49 +238,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
-    .cover{
-            display: flex;
-            width: 100vw;
-            
-    }
-    .mobile{
-      display: none
-    }
-    .left{
-        background: url('../assets/images/bg2.png');
-        width: 724px;
-        height: 100vh;
-        padding: 30px 40px;
-    }
-    .right{
-        padding-left: 100px;
-        padding-top: 50px;
 
-    }
-    .first{
-      display: none;
-    }
-    .second{
-      display: none;
-    }
-    .third{
-      display: block;
-    }
-    
 
-    h1{
-            
-            height: 48px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
-            color: #1F1F1F;
-            margin-bottom: 10px;
-    }
-    a{
-        color:  #5007E0;
+*, 
+  ::before, 
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1F1F1F;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+  }
+
+  a{
+    color:  #5007E0;
+  }
+
+  h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7C7C7C;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr;
+    min-height: 100vh;
+    max-width: 100vw;
+          
+  }
+
+  .left-col, .right-col {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-col {
+    background: url('../assets/images/bg2.png');
+    background-position: center;
+    background-size: cover;
+    padding: 2.5rem;
+    padding-bottom: 4rem;
+    gap: 2rem;
+  }
+
+  .left-col div, .right-col div {
+    width: 100%;
+  }
+
+  .quote img, .bottom img {
+    width: auto;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .right-col{
+    padding: 5rem 2.5rem 10rem;
+    gap: 5rem;     
+  }
+
+  
+  .top-right {
+    display: block;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    /* padding: 0 0.5rem; */
+    /* border: 1px solid red; */
+  }
+
+  a{
+    color:  #5007E0;
     }
     .step{
       
@@ -210,70 +354,128 @@
         font-size: 18px;
         line-height: 28px;
         color: #7C7C7C;
-        padding-left: 760px;
         text-align: right;
-        align-items: right;
     }
+
     .step h6{
-        width: 126px;
-        height: 19px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
-        color: #7C7C7C;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #7C7C7C;
     }
     .step h4{
-        height: 17px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        color: #5007E0;
-        padding-left: 20px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5007E0;
     }
-    .img{
-        padding: 245px 76px 0px 76px;
-    }
-    .log{
-        margin-top: 22px;
-        padding-left: 30px;
-    }
-    .log p{
-        width: 411px;
-        font-family: 'Sofia Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        color: #7C7C7C;
 
-        padding-bottom: 55px;
-    }
-      input, select, textarea{
+  .center-form {
+    max-width: 550px;
+    padding-left: 5rem;
+  }
+
+  .log p{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7C7C7C;
+    padding-bottom: 55px;
+  }
+
+  .log h1 {
+    font-size: 36px;
+  }
+
+  .form-input {
+    margin-bottom: 2rem;
+  }
+
+  .password-field {
+    position: relative;
+  }
+
+  label{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #7C7C7C;
+    /* padding-bottom: 20px; */
+  }
+
+  label span {
+    color: red;
+  }
+
+  .form-input > input, .password-field > input, select, textarea{
     border: 1px solid #7C7C7C;
-    box-sizing: border-box;
     border-radius: 10px;
-    width: 490px;
-    height: 55px;
-    padding: 10px;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 8px;
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
-    color: #5007E0;
-    
-    
+    color: #5007E0; 
   }
-  input:hover{
+
+  :is(input, select, textarea):focus {
+    outline: #5007E0;
+  }
+
+  :is(input, select, textarea):hover{
     border: 1px solid #5007E0;
   }
+
+  select {
+    padding: 16.5px 30px;
+  }
+
+  .placeholder-span {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY( -50%);
+    font-size: 15px;
+    color: #5007E0;
+    cursor: pointer;
+  }
+
+   .formy{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .formy div:last-child {
+    text-align: right;
+  }
+
+  .checkbox {
+    margin-right: 5px;
+  }
+
+  span a {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
   .btn1{
-    height: 60px;
-    width: 490px;
     background: #5007E0;
     border-radius: 10px;
     font-family: 'Sofia Pro';
@@ -283,12 +485,8 @@
     line-height: 24px;
     color: #FFFFFF;
   }
-  form{
-    margin-left: 30px;
-  }
+
   .btn2{
-    width: 490px;
-    height: 60px;
     background: #FFFFFF;
     border: 1px solid #B5B5B5;
     box-sizing: border-box;
@@ -299,100 +497,119 @@
     justify-content: center;
   }
 
-  label{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 31px;
-    color: #7C7C7C;
-    margin-bottom: 10px;
-
-  }
-  .formy{
+   .or{
     display: flex;
     align-items: center;
-    width: 490px;
     justify-content: space-between;
-    margin-top: -20px;
-
+    margin: 10px 0;
+    padding: 1rem;
   }
-  .or{
-    display: flex;
-    align-content: center;
-    height: 40px;
-    justify-content: space-between;
-    width: 490px;
-    margin-top: 30px;
+
+
+  .line{
+      max-width: 192px;
+      height: 0px;
+      border: 1px solid #7C7C7c;
+      flex: 1;
   }
-    .line{
-        width: 192px;
-        height: 0px;
-        border: 1px solid #7C7C7c;
-        margin-top: 10px;
+
+  .text {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  .first{
+    display: block;
+  }
+
+  .second{
+    display: none;
+  }
+
+  .third {
+    display: none;
+  }
+
+  .bottom-right {
+    width: 100%;
+    text-align: right;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 12px;
+  }
+
+  .bottom {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .service {
+    color: #5007E0;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .photo-box {
+    width: 100%;
+    height: 15rem;
+    border: 2px dashed #5007E0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+   @media only screen and (max-width: 1200px) {
+    .center-form {
+      padding-left: 0rem;
     }
-    .bot{
-      align-items: center;
-      display: flex;
-      width:490px ;
-      justify-content: center;
-      height: 80px;
-    }
-    .here{
-      display: flex;
-      width:490px ;
-      justify-content: right;
-      margin-top: 4rem;
+     
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .container {
+      grid-template-columns: 1fr;
     }
 
-    @media only screen and (max-width: 600px) {
-      .cover{
-        overflow: hidden;
-      }
-      .mobile{
-        display: block;
-        margin-bottom: 50px;
-      }
-      .left{
-        display: none
-      }
-      .right{
-        padding-left: 0px;
-        padding-top: 10px;
+    .left-col {
+      gap: 8.5rem;
+      padding-bottom: 10rem;
     }
-    input{
-      width: 360px;
+
+    .quote img {
+      margin: auto;
     }
-    select{
-      width: 360px;
+
+    .right-col {
+      place-items: center;
     }
-    .btn1{
-     width: 360px;
+
+    .center-form {
+      padding: 0;
     }
-   .log p{
-      width: 370px;
-      
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .left-col {
+      display: none;
     }
-    .line{
-      width: 150px;
+
+    .right-col {
+      padding-top: 2rem;
     }
-    .btn2{
-      width: 360px;
+
+    .mobile-nav {
+      display: block;
     }
-    .or{
-      width: 360px;
-    }
-    .log h1{
-      width: 360px;
-      margin-bottom: 60px;
-    }
-    .step{
-      padding-left: 183px;
-      width: 360px;
-      text-align: right;
-    }
-    textarea{
-      width: 360px;
-    }
-    }
+
+    .formy span {
+    font-size: 13px;
+  }
+  }
+
+
+
+   
 </style>

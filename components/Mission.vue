@@ -1,21 +1,23 @@
 <template>
     <div>
-        <div class="cover">
-            <h2>Our Mission & Vision</h2>
-            <div class="all">
-                <div style="" class="mission">
-                <img src="../assets/images/Group 1000004166.png" alt="">
-                <p>Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.</p>
-                
-                </div>
-                <div class="mission" style="">
-                <img src="../assets/images/Group 1000004166.png" alt="">
-                <p>Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.</p>
-                
-                </div>
+        <div class="cover container">
+          <h2>Our Mission & Vision</h2>
+          <div class="all">
+            <div style="" class="mission">
+              <img src="../assets/images/Group 1000004166.png" alt="" class="mission-icon1">
+              <p>
+                Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.
+              </p>
+              
             </div>
-
-             
+            <div class="mission" style="">
+              <img src="../assets/images/Group 1000004166.png" alt="" class="mission-icon2">
+              <p>
+                Give your car the right service it needs with a unique automechanic shop that links you with the best, competent and effective tecnicians.
+              </p>
+              
+            </div>
+          </div>  
         </div>
         
 
@@ -23,7 +25,7 @@
    <h4>We connect customers with expert technicians.</h4>
           <div class="control">
         
-          <div class="iCountUp">
+          <div class="iCountUp border-btm">
     <ICountUp
       :delay="delay"
       :endVal="endVal"
@@ -33,7 +35,8 @@
     />
     <p>registered technicians</p>
   </div>
-     <div class="iCountUp">
+  <!-- <div class="border-btm"></div> -->
+     <div class="iCountUp border-btm">
     <ICountUp
       :delay="delay"
       :endVal="endValy"
@@ -50,9 +53,6 @@
       @ready="weReady"
     />
     <p>registered customers</p>
-  </div>
-  <div>
-      <img src="../assets/images/mask1.png" alt="">
   </div>
        </div>
    </div>
@@ -104,56 +104,74 @@
 </script>
 
 <style scoped>
-        .all{
-            display:flex; 
-        justify-content: space-between;
-        align-items: center;
-        }
-    .mission{
-        display:flex; 
-        justify-content: space-around;
-        margin-top: 40px;
-        margin-right: 60px
 
-    }
+  *, 
+  ::before, 
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-    p{
-        width: 520px;
-        height: 104px;
-        font-family: 'Sofia Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 26px;
-        color: #7C7C7C;
-    }
-    img{
-        width: 65px;
-        height: 65px;
-        margin-right: 30px;
-    }
-    .cover{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        width: 100%;
-    }
-    .cover h2{
-        width: 1015px;
-        height: 39px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
-        color: #350B89;
-        margin-bottom: 32px;
+  .all{
+    display:grid; 
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem 2.8rem;
+  }
 
-    }
-     .iCountUp {
+  .mission{
+    display:flex; 
+    justify-content: center;
+    gap: 1.5rem;
+      
+  }
+
+  .all p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  p{
+    width: 100%;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #7C7C7C;
+    margin: 0;
+  }
+
+  img{
+    width: 65px;
+    height: 65px;
+  }
+
+  .cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+      margin: auto;
+    max-width: 1200px;
+    margin-top: 50px;    
+  }
+    
+  .cover h2{
+    height: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #350B89;
+    margin-bottom: 32px;
+  }
+
+  .iCountUp {
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 600;
@@ -164,9 +182,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 3rem 0;
   }
+
   .iCountUp p{
-    width: 262px;
     height: 35px;
     font-family: 'Sofia Pro';
     font-style: normal;
@@ -179,66 +198,71 @@
   }
 
   .control{
-    background: #F5F3FF;
+    background:#F5F3FF url('../assets/images/mask1.png');
+    background-repeat: no-repeat;
+    background-position: right;
     width: 100%;
-    height: 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 16rem;
+    gap: 3rem;
     margin-top: 40px;
+    padding: 2rem ;
   }
+
   .control img{
     width: 126px;
     height: 128px;
   }
 
   h4{
-      width: 100vw;
-      height: 35px;
-      font-family: 'Sofia Pro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 26px;
-      line-height: 35px;
-      color: #7C7C7C;
-      text-align: center;
-      margin-top: 110px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    color: #7C7C7C;
+    text-align: center;
+    margin-top: 110px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .all{
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .all .mission-icon2 {
+      order: 2;
+    }
+
+    h4 {
+      margin: 50px auto 90px;
+      padding: 1rem;
+    }
+
+    .control {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .border-btm {
+      padding-bottom: 4rem;
+      width: 100%;
+      border-bottom: 1px solid #fff;
+      border-image: linear-gradient(to right, #F5F3FF, #26046A,#F5F3FF );
+      border-image-slice: 1;
+    }      
   }
 
     @media only screen and (max-width: 600px) {
-
-           .all{
-            display:flex; 
-            flex-direction: column;
-        justify-content: space-between;
+      .mission {
         align-items: center;
-        }
-          .mission{
-        display:flex; 
-        justify-content: space-around;
-        margin-top: 40px;
-        margin-right: 0px
-
-    }
+      }
+       
      .mission   p{
-        width: 290px;
         font-size: 20px;
-      
-    }
-
-    .control{
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      justify-content: space-between;
-      padding: 0 50px;
-      
-    }
-    .control img{
-      display: none;
-    }
-     
+      }     
 
     }
 </style>

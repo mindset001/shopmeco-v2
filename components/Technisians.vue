@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mission-container">
         <div class="cover">
                 <h2>Meet Some of Our registered Technicians</h2>
 
@@ -42,12 +42,25 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
+*, 
+::before, 
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-container {
+    padding: 0 2rem;
+}
+
 .cover{
     margin-top: 120px;
     margin-bottom: 120px;
 }
 .cover h2{
-    height: 39px;
+    /* height: 39px; */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -58,6 +71,7 @@ export default {
     color: #350B89;
     align-items: center;
     padding-bottom: 60px;
+    
 
 }
     .tech {
@@ -70,13 +84,15 @@ export default {
     .trust{
         background: url('../assets/images/mask.png'), #7029FF;
         border-radius: 20px;
-        width: 1401px;
-        height: 203px;
+        padding: 2rem;
+        /* height: 203px; */
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left: 250px;
+        max-width: 95%;
+        margin: auto;
         margin-bottom: 100px;
+        
     }
     h3{
 
@@ -86,7 +102,7 @@ export default {
         font-size: 32px;
         line-height: 39px;
         color: #FFFFFF;
-        width: 710px;
+        width: 100%;
     }
 
     button{
@@ -101,22 +117,35 @@ export default {
         color: #fff;
     }
 
-      @media only screen and (max-width: 600px) {
-         .tech {
+     @media only screen and (max-width: 900px) {
+        .trust {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .cover h2 {
+            margin-bottom: 1.2rem;
+        }
+
+            .tech {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     } 
-    .trust{
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-         width: 401px;
-    }
+
+     }
+
+      @media only screen and (max-width: 600px) {
+     
     h3{
-       width: 300px;
+       /* width: 300px; */
        font-size: 24px; 
     }
       }
