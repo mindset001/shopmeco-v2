@@ -1,30 +1,37 @@
 <template>
-    <div>
+  <div>
     <h1 class="firsty">Hear out what people say about us</h1>
         <ssr-carousel :slides-per-page='1' loop center show-dots show-arrows >
   <slide :index='1'>
     <div class="flex">
-        <div>
-        <img src="../assets/images/Rectangle 27.png" alt="" class="fish">
-        <img src="../assets/images/Rectangle 25.png" alt="" class="fishes">
-        </div>
-        <p>Give your car the right service it needs with a unique automechanic shop that links you with the best,
-         competent and effective tecnicians.your car the right service it needs with a unique automechanic shop that links you with the best, 
-         competent and effective tecnicians.</p>
+      <div class="slide-img">
+        <img src="../assets/images/Rectangle 27.png" alt="" class="overlay">
+        <img src="../assets/images/Rectangle 25.png" alt="" class="img">
+      </div>
+      <div class="slide-article">
+        <p>
+          Give your car the right service it needs with a unique automechanic shop that links you with the best,
+          competent and effective tecnicians.your car the right service it needs with a unique automechanic shop that links you with the best, 
+          competent and effective tecnicians.
+         </p>
+      </div>
     </div>
-  
   </slide>
+
   <slide :index='2'>
-  
-     <div class="flex">
-        <div>
-        <img src="../assets/images/Rectangle 27.png" alt="" class="fish">
-        <img src="../assets/images/Rectangle 25.png" alt="" class="fishes">
-        </div>
-        <p>Give your car the right service it needs with a unique automechanic shop that links you with the best,
-         competent and effective tecnicians.your car the right service it needs with a unique automechanic shop that links you with the best, 
-         competent and effective tecnicians.</p>
-         </div>
+    <div class="flex">
+      <div class="slide-img">
+        <img src="../assets/images/Rectangle 27.png" alt="" class="overlay">
+        <img src="../assets/images/Rectangle 25.png" alt="" class="img">
+      </div>
+      <div class="slide-article">
+        <p>
+          Give your car the right service it needs with a unique automechanic shop that links you with the best,
+          competent and effective tecnicians.your car the right service it needs with a unique automechanic shop that links you with the best, 
+          competent and effective tecnicians.
+         </p>
+      </div>
+    </div>
   </slide>
   
   
@@ -45,17 +52,43 @@ import ssrCarouselCss from 'vue-ssr-carousel/index.css'
 </script> 
 
 <style scoped>
-    slide{
-      
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    padding: 0 40px;
+
+*, 
+::before, 
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-p{
-  width: 676px;
-  height: 162px;
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+slide{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0 60px;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  place-items: center;
+  gap: 3rem;
+}
+
+.slide-img {
+  display: grid;
+  max-width: 100%;
+  position: relative;
+}
+
+p {
   font-family: 'Sofia Pro';
   font-style: normal;
   font-weight: 400;
@@ -64,62 +97,62 @@ p{
   text-align: center;
   letter-spacing: 0.01em;
   color: #7C7C7C;
-  padding-left: 80px;
-  padding-top: 4em;
 }
 
-.fish{
-    position: relative;
-    z-index: 2;
-    left: 26.07px;
-    width: 238.93px;
-    height: 351.02px;
+.img {
+  margin-top: 2rem;
 }
-.fishes{
-    position: absolute;
-    top: 26.07px;
-    z-index: 1;
-    width: 238.93px;
-    height: 351.02px;
+
+.overlay{
+  position: absolute;
+  z-index: 99;
+  left: 2rem;
 }
 .firsty{
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 29em;
-    height: 58px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
-    color: #350B89;
-    padding-left: -2em;
-    padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #350B89;
+  margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  slide {
+    padding: 0 30px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
   .firsty{
-    width: 15em;
     text-align: center;
-    height: 58px;
     font-size: 28px;
     padding-bottom: 20px;
     line-height: 38px;
   }
+
   .flex{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
+
   p{
     text-align: left;
-    padding-left: 10px;
     height: auto;
-    font-size: 16px;
-    width: 300px;
+    font-size: 20px;
     padding-top: 10px;
   }
+
+   slide {
+    padding: 0 60px;
+  }
+
 }
 </style>
 

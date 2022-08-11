@@ -1,75 +1,172 @@
 <template>
-    <div class="cover">
-        <div class="left">
-        <div class="logo">
+    <div class="container">
+    <navbar class="mobile-nav"/>
+
+    <div class="left-col">
+      <div class="logo">
         <a href="/"><img src="../assets/images/Mask group.png" alt=""></a>
-        <img src="../assets/images/Group 3721.png" alt="" class="img">
       </div>
+
+      <div class="quote">
+         <img src="../assets/images/Group 3721.png" alt="">
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="top-right">
+         <h4>
+          Already have an account?<a href="/login"> Login</a>
+        </h4>
+      </div>
+
+      <div class="center-form">
+
+        <div class="log">
+            <h1>Get Started</h1>
         </div>
-        <div class="right">
-        <navbar class="mobile"/>
-        <h4>Already have an account?<a href="/login"> Log In</a></h4>
-        <h1>Get Started</h1>
+
         <a href="/individual">
             <div class="one">
-            <div>
-                <img src="../assets/images/Group 3702.png" alt="">
+                <div class="img">
+                    <img src="../assets/images/Group 3702.png" alt="">
+                </div>
+                <div class="text">
+                    <h5>Individual / Car Owners</h5>
+                    <p>Personal account to manage your car and keep it in good condition.</p>
+                </div>
+                <div class="img">
+                    <img src="../assets/images/Union.png" alt="">
+                </div>
             </div>
-            <div>
-                <h5>Individual / Car Owners</h5>
-                <p>Personal account to manage your car and keep it in good condition.</p>
-            </div>
-            <div>
-                <img src="../assets/images/Union.png" alt="">
-            </div>
-        </div>
         </a>
+
         <a href="/business">
             <div class="two">
-            <div>
-                <img src="../assets/images/Group 3699.png" alt="">
+                <div class="img">
+                    <img src="../assets/images/Group 3699.png" alt="">
+                </div>
+                <div class="text">
+                    <h5>Business</h5>
+                    <p>Business account for individual service providers and companies.</p>
+                </div>
             </div>
-            <div>
-                <h5>Business</h5>
-                <p>Business account for individual service providers and companies.</p>
-            </div>
-            <div>
-                <!-- <img src="../assets/images/Union.png" alt=""> -->
-            </div>
-        </div>
         </a>
-        </div>
+
+        
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@100;200;300;400;600;700;800&family=Licorice&display=swap');
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
-    .cover{
-            display: flex;
-            overflow: hidden;
+ *, 
+    ::before, 
+    ::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      /* width: 100%; */
+    }
+
+    h1{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      color: #1F1F1F;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      margin: 0;
+    }
+
+    a{
+      color:  #5007E0;
+    }
+
+    h4{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #7C7C7C;
+      width: 100%;
+    }
+
+    h5 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+   .mobile-nav {
+    display: none;
+    width: 100%;
+  }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1.2fr 1.5fr;
+      min-height: 100vh;
+      max-width: 100vw;
             
     }
-    .mobile{
-        display: none;
-        margin-bottom: 50px;
-        width: 100vw;
-        
+
+    .left-col, .right-col {
+      display: grid;
+      width: 100%;
+      height: 100%;
     }
-    .left{
-        background: url('../assets/images/bg2.png');
-        width: 724px;
-        height: 100vh;
-        padding: 30px 40px;
+
+    .left-col {
+      background: url('../assets/images/bg2.png');
+      padding: 2.5rem;
+      padding-bottom: 4rem;
+      gap: 2rem;
     }
-    .right{
-        padding-left: 100px;
-        padding-top: 110px;
+
+    .left-col div, .right-col div {
+      width: 100%;
     }
-    .one{
-        width: 690px;
-        height: 115px;
+
+     .right-col{
+     padding: 5rem 3rem 10rem;
+     gap: 5rem;     
+    }
+
+    
+    .top-right {
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: right;
+    }
+
+    .log {
+        margin-bottom: 3rem;
+    }
+
+    .center-form {
+      max-width: 550px;
+    }
+
+      .one{
         background: #F5F3FF;
         border: 1px solid #5007E0;
         box-sizing: border-box;
@@ -77,88 +174,102 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
-        padding: 0 30px;
+        padding:1rem 30px;
+        /* gap: 1rem; */
         justify-content: space-between;
     }
 
-    .two{
-        width: 690px;
-        height: 115px;
+   
+
+    .one .img, .two .img {
+        flex-basis: 10%;
+    }
+
+    .one div:last-of-type img{
+        margin-left: auto;
+    }
+
+    .one .text, .two .text {
+        flex-basis: 70%;
+    }
+
+      .two{
         background: #FFFFFF;
-        box-shadow: 0px 5px 54px 1px rgba(55, 5, 153, 0.08);
+        box-shadow: 0px 5px 54px 3px rgba(55, 5, 153, 0.08);
         border-radius: 10px;
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
         align-items: center;
-        padding: 0 30px;
-        justify-content: space-between;
+        padding: 1rem 30px;
+        gap: 1.7rem;
+        /* justify-content: space-between; */
     }
 
-    h1{
-            width: 225px;
-            height: 48px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
-            color: #1F1F1F;
-            margin-bottom: 60px;
-    }
-    a{
-        color:  #5007E0;
-    }
-    h4{
-      
-        height: 28px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        color: #7C7C7C;
-        padding-left: 660px;
-        margin-bottom: 148px;
-    }
-    .img{
-        padding: 245px 76px 0px 76px;
-    }
-    @media only screen and (max-width: 600px) {
-        .mobile{
-            display: block;
+@media only screen and (max-width: 900px) {
+
+      .mobile-nav {
+      display: block;
+     }
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .left-col {
+        gap: 8.5rem;
+        padding-bottom: 10rem;
+      }
+
+      .quote img {
+        margin: auto;
+      }
+
+      .right-col {
+        place-items: center;
+      }
+
+      .center-form {
+        padding: 0;
+      }
+     
+}
+
+@media only screen and (max-width: 600px) {
+
+        .one, .two {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
         }
-        .left{
-            display: none;
-        }
-        .right{
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-     .one{
-        width: 370px;
-        height: 115px;
-        margin-left: 20px;
-       
+
+        .one .img, .two .img {
+        flex-basis: 100%;
+        width: 50px;
+        margin: auto;
     }
 
-    .two{
-        width: 370px;
-        height: 115px;
-        margin-left: 20px;
-        
+    .one div:last-of-type img{
+        margin: auto;
     }
-    h1{
-        margin-left: 20px;
+
+    .one .text, .two .text {
+        flex-basis: 100%;
     }
-    h4{
-        padding-left: 30px;
+
+    .left-col {
+      display: none;
     }
-    h5{
-        padding-left: 10px;
+
+    .right-col {
+      padding-top: 2rem;
     }
-    p{
-        padding-left: 10px;
+
+    .mobile-nav {
+      display: block;
     }
-      
-    }
+
+}
+
+   
 </style>
