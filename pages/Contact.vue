@@ -1,64 +1,58 @@
 <template>
- <div>
-    <navbar class="mobile-nav"/>
-     <div class="main-container">
-  <div>
-     <div class="nav">
-        <div class="logo">
-        <img src="../assets/images/Mask group.png" alt="">
-      </div>
-      <ul>
-        <li ><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li style="color: #FFB74C;"><a href="contact">Contact</a></li>
-      </ul>
+ <div class="contact-page">
+  <header>
 
+    <div class="navbars">
+      <navbar class="mobile-nav"/>
+      <DesktopNav />
+
+    </div>
+    <div class="main-container">
       <div>
-        <a href="/login"><button class="btn">Sign in</button></a>
-        <a href="/started"><button class="btn2">Sign Up</button></a>
+          <div class="body">
+            <div class="contact-article">
+              <h1>Contact Us</h1>
+              <p>
+                Have more questions or enquires? Send us a message and we’ll get back to you as soon as possible.
+              </p>
+
+              <button class="btn3">Get Started</button>
+            </div>
+          
+            <form action="" class="contact-form">
+              <h3 >Send us a message</h3>
+              <div style="margin-bottom: 30px">
+                <label for="name">Your name</label>
+                <br>
+                <input type="text">
+              </div>
+              <div style="margin-bottom: 30px">
+                <label for="name">Your email</label> <br>
+                <input type="text">
+              </div>
+              <div>
+                <label for="name">Your Message</label> <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+
+              <button>Submit</button>
+            </form>
+
       </div>
-     </div>
-
-     <div class="body">
-      <div class="contact-article">
-        <h1>Contact Us</h1>
-        <p>
-          Have more questions or enquires? Send us a message and we’ll get back to you as soon as possible.
-        </p>
-
-        <button class="btn3">Get Started</button>
-      </div>
-     
-      <form action="" class="contact-form">
-        <h3 >Send us a message</h3>
-        <div style="margin-bottom: 30px">
-          <label for="name">Your name</label>
-          <br>
-          <input type="text">
-        </div>
-        <div style="margin-bottom: 30px">
-          <label for="name">Your email</label> <br>
-          <input type="text">
-        </div>
-        <div>
-          <label for="name">Your name</label> <br>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-
-        <button>Submit</button>
-      </form>
-
-     </div>
-  </div>
+    </div>
 
  
   </div>
+  </header>
    <Footer/>
  </div>
 </template>
 
 <script>
+import DesktopNav from '~/components/DesktopNav.vue';
+
 export default {
+  components: { DesktopNav }
   
 }
 </script>
@@ -85,39 +79,26 @@ form button{
     box-sizing: border-box;
   }
 
+  .contact-page {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+
+  header {
+    background: url(../assets/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
   .mobile-nav {
     display: none;
   }
 
   .main-container{
-    background: url(../assets/images/background.png);
-    height: 700px;
     padding: 0 70px;
     padding-top: 15px;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
     margin-bottom: 250px;
-  }
-
-  .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .btn2{
-    background: #FFB74C;
-    border-radius: 20px 0px 20px 20px;
-    width: 135px;
-    height: 45px;
-    align-items: center;
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
   }
 
    .btn3{
@@ -133,39 +114,7 @@ form button{
     font-weight: 400;
     font-size: 21px;
     line-height: 21px;
-  }
-
-  ul{
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-  }
-
-  li{
-    padding-left: 32px;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-  }
-
-  .btn{
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-    padding-right: 33px;
-  }
-
-  a {
-    color: white;
-  }
-
-  a:hover{
-    color: #FFB74C;
+    transition: all 0.3s linear;
   }
 
   .body{
@@ -188,6 +137,10 @@ form button{
     font-size: 52px;
     line-height: 63px;
     color: #FFFFFF;
+  }
+
+  label {
+    text-transform: capitalize;
   }
 
   .body p{
@@ -240,6 +193,17 @@ form button{
     border-radius: 10px;
     width: 100%;
     height: 55px;
+    padding: 0.5rem;
+    transition: all 0.3s linear;
+  }
+
+  input:hover {
+    border-color: #5007E0;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #5007E0;
   }
 
   label{
@@ -274,18 +238,24 @@ form button{
     font-weight: 500;
     font-size: 25px;
     line-height: 25px;
+    transition: all 0.3s linear;
   }
+
+  form button:hover, .btn3:hover {
+    background: #865203;
+  }
+
+  @media only screen and (max-width: 1000px){
+  .main-container {
+    padding: 15px 50px 0;
+  }
+
+}
 
   @media only screen and (max-width: 900px) {
 
-    .main-container {
+    header {
        background: url(../assets/images/bg2.png);
-      padding: 0 50px;
-      background-position: center, bottom;
-    }
-
-    .nav {
-      display: none;
     }
 
     .mobile-nav {
@@ -304,7 +274,6 @@ form button{
 
     .main-container {
       height: 900px;
-      background-position: center;
       margin-bottom: 400px;
     }
 
