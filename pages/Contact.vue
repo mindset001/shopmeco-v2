@@ -153,7 +153,6 @@ form button{
     width: 100%;
     padding-top: 20px;
   }
-
  .body img{
     width: 275px;
     height: 404px;
