@@ -136,6 +136,8 @@
 
     .left-col {
       background: url('../assets/images/bg2.png');
+      background-position: center;
+      background-size: cover;
       padding: 2.5rem;
       padding-bottom: 4rem;
       gap: 2rem;

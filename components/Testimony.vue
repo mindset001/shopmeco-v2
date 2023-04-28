@@ -36,7 +36,7 @@ export default {
         font-size: 48px;
         line-height: 58px;
         text-align: center;
-        width: 888px;
+        width: 100%;
         color: #FFFFFF;
         align-items: center;
     }
@@ -49,19 +49,16 @@ export default {
         height: 60px;
         background: #FFB74C;
         border-radius: 30px 0px 30px 30px;
+        transition: all 0.3s linear;
+    }
+
+    button:hover {
+        background: #865203;
     }
 
     @media only screen and (max-width: 600px) {
-        h2{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 58px;
-            text-align: center;
-            width: 308px;
-            color: #FFFFFF;
-            align-items: center;
+        h2 {
+            font-size: 38px;
         }
 
         button {

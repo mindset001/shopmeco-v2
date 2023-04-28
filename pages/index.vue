@@ -1,50 +1,42 @@
 <template>
  <div>
-  <navbar class="mobile-nav"/>
-  <div class="daddy">
+  
+   <div class="daddy">
+     <header>
+       <div class="navbars">
+         <navbar class="mobile-nav"/>
+        <DesktopNav />
+    </div>
 
- 
-     <div class="main-container">
-  <div>
-     <div class="nav">
-        <div class="logo">
-        <img src="../assets/images/Mask group.png" alt="">
-      </div>
-      <ul>
-        <li ><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li style="color: #FFB74C;"><a href="contact">Contact</a></li>
-      </ul>
-
+    <div class="main-container">
+  
       <div>
-        <a href="/login"><button class="btn">Sign in</button></a>
-        <a href="/started"><button class="btn2">Sign Up</button></a>
-      </div>
-     </div>
-
-     <div class="body">
-      <div class="index-article">
-        <h1>Find and Hire local Mechanics near you with ShopMeco</h1>
-        <p>
-          Give your car the right service it needs with a unique automechanic 
-          shop that links you with the best, competent and effective tecnicians.
-        </p>
-
-        <a href="/started"><button class="btn3" >Get Started</button></a>
-      </div>
-      <div class="index-img">
-        <div class="img-box1">
-          <img src="../assets/images/Rectangle27.png" alt="" class="overlay1">
-          <img src="../assets/images/Rectangle25.png" alt="" class="img1">
+        <div class="body">
+            <div class="index-article">
+              <h1>Find and Hire local Mechanics near you with ShopMeco</h1>
+              <p>
+                Give your car the right service it needs with a unique automechanic 
+                shop that links you with the best, competent and effective tecnicians.
+              </p>
+        
+              <a href="/started"><button class="btn3" >Get Started</button></a>
+            </div>
+            <div class="index-img">
+              <div class="img-box1">
+                <img src="../assets/images/Rectangle27.png" alt="" class="overlay1">
+                <img src="../assets/images/Rectangle25.png" alt="" class="img1">
+              </div>
+              <div class="img-box1">
+                <img src="../assets/images/Rectangle 27 (1).png" alt="" class="overlay2">
+                <img src="../assets/images/Rectangle 25 (1).png" alt=""  class="img2">
+              </div>
+          </div>
         </div>
-        <div class="img-box1">
-          <img src="../assets/images/Rectangle 27 (1).png" alt="" class="overlay2">
-          <img src="../assets/images/Rectangle 25 (1).png" alt=""  class="img2">
-        </div>
-    </div>
-    </div>
+      </div>
   </div>
-  </div>
+  </header>
+   
+  
 
     <Brand/>
    <Service/>
@@ -57,8 +49,10 @@
 
 <script>
 import HomeCarousel from "~/components/HomeCarousel.vue";
+import DesktopNav from "~/components/DesktopNav.vue";
+
 export default {
-    components: { HomeCarousel }
+    components: { HomeCarousel, DesktopNav }
 }
 </script>
 
@@ -73,51 +67,27 @@ export default {
   margin: 0;
   padding: 0;
 }
-
   .mobile-nav {
     display: none;
   }
 
-  .main-container{
+  header {
     background: url(../assets/images/background.png);
-    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  .main-container{
     padding: 0 70px;
     padding-top: 15px;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
     margin-bottom: 100px;
   }
 
-  .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   a {
-    color: white;
-  }
-
-  a:hover{
-    color: #FFB74C;
-  }
+  
 
   .daddy{
     overflow: hidden;
-  }
-
-  .btn2{
-    background: #FFB74C;
-    border-radius: 20px 0px 20px 20px;
-    width: 135px;
-    height: 45px;
-    align-items: center;
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
   }
 
    .btn3{
@@ -133,31 +103,11 @@ export default {
     font-weight: 400;
     font-size: 21px;
     line-height: 21px;
+    transition: all 0.3s linear;
   }
 
-  ul{
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-  }
-
-  li{
-    padding-left: 32px;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-  }
-
-  .btn{
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-    padding-right: 33px;
+  .btn3:hover {
+    background: #865203;
   }
 
   .body{
@@ -214,8 +164,8 @@ export default {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 52px;
-    line-height: 63px;
+    font-size: 3.5rem;
+    line-height: 53px;
     color: #FFFFFF;
   }
 
@@ -229,19 +179,34 @@ export default {
     padding-top: 20px;
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px){
 
+    .index-article {
+      padding-top: 1rem;
+    }
     .main-container {
+      padding: 15px 50px 0;
+    }
+
+    .index-article p{
+      font-size: 1.5rem;
+    }
+
+    .index-article h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    header {
       background: url(../assets/images/bg2.png);
+    }
+    .main-container {
       padding: 0 50px;
-      background-position: center, bottom;
       height: 900px;
       margin-bottom: 200px;
     }
-    .nav {
-      display: none;
-    }
-
+    
     .mobile-nav {
       display: block;
     }

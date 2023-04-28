@@ -1,52 +1,39 @@
 <template>
  <div>
-  <navbar class="mobile-nav"/>
-  <div class="main-container">
-  <div>
-     <div class="nav">
-         <div class="logo">
-        <img src="../assets/images/Mask group.png" alt="">
-      </div>
-      <ul>
-          <li ><a href="/">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li style="color: #FFB74C;"><a href="contact">Contact</a></li>
-      </ul>
-
-      <div>
-          <a href="/login"><button class="btn">Sign in</button></a>
-          <a href="/started"><button class="btn2">Sign Up</button></a>
-      </div>
-     </div>
-
-     <div class="body">
-      <div class="about-article">
-        <h1>Our Story</h1>
-        <p>
-          Give your car the right service it needs with a unique automechanic 
-          shop that links you with the best, competent and effective tecnicians.
-        </p>
-
-        <a href="/started"><button class="btn3">Get Started</button></a>
-      </div>
-      <div class="about-img">
-    <div class="img-box1">
-      <img src="../assets/images/Rectangle27.png" alt="" class="overlay1">
-      <img src="../assets/images/man.png" alt="" class="img1">
+  <header>
+    <div class="navbars">
+      <navbar class="mobile-nav"/>
+      <DesktopNav />
     </div>
-
-    <div class="img-box2">
-      <div>
-        <img src="../assets/images/Rectangle 27 (1).png" alt="" class="overlay2">
-        <img src="../assets/images/woman.png" alt=""  class="img2">
+    <div class="main-container">
+    <div>  
+       <div class="body">
+          <div class="about-article">
+            <h1>Our Story</h1>
+            <p>
+              Give your car the right service it needs with a unique automechanic 
+              shop that links you with the best, competent and effective tecnicians.
+            </p>
+    
+            <a href="/started"><button class="btn3">Get Started</button></a>
+          </div>
+          <div class="about-img">
+            <div class="img-box1">
+              <img src="../assets/images/Rectangle27.png" alt="" class="overlay1">
+              <img src="../assets/images/man.png" alt="" class="img1">
+            </div>
+    
+            <div class="img-box2">
+              <div>
+                <img src="../assets/images/Rectangle 27 (1).png" alt="" class="overlay2">
+                <img src="../assets/images/woman.png" alt=""  class="img2">
+              </div>
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-
- 
-  </div>
- </div>
+   </div>
+  </header>
   <Mission/>
   <Technisians/>
   <Footer/>
@@ -54,7 +41,10 @@
 </template>
 
 <script>
+import DesktopNav from '~/components/DesktopNav.vue';
+
 export default {
+  components: { DesktopNav }
   
 }
 </script>
@@ -75,36 +65,19 @@ export default {
     display: none;
   }
 
-  .main-container{
+  header {
     background: url(../assets/images/background.png);
-    height: 700px;
-    padding: 0 70px;
-    padding-top: 15px;
     background-size: cover;
-    background-position: center bottom;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
-  }
-  
-  .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 100vh;
   }
 
-  .btn2{
-    background: #FFB74C;
-    border-radius: 20px 0px 20px 20px;
-    width: 135px;
-    height: 45px;
-    align-items: center;
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
+  .main-container{
+    padding: 0 70px;
+    padding-top: 15px;
+    margin-bottom: 100px;
   }
+
 
    .btn3{
     background: #FFB74C;
@@ -119,6 +92,11 @@ export default {
     font-weight: 400;
     font-size: 21px;
     line-height: 21px;
+    transition: all 0.3s linear;
+  }
+
+  .btn3:hover {
+    background: #865203;
   }
 
   ul{
@@ -134,24 +112,6 @@ export default {
     font-weight: 400;
     font-size: 21px;
     line-height: 21px;
-  }
-
-  .btn{
-    color: #fff;
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-    padding-right: 33px;
-  }
-
-   a {
-    color: white;
-  }
-
-  a:hover{
-    color: #FFB74C;
   }
 
  .body{
@@ -225,20 +185,20 @@ export default {
     padding-top: 20px;
   }
 
+  @media only screen and (max-width: 1000px){
+  .main-container {
+    padding: 15px 50px 0;
+  }
+
+}
+
   @media only screen and (max-width: 900px) {
 
-    .main-container {
+    header {
       background: url(../assets/images/bg2.png);
-      padding: 0 50px;
-      background-position: center, bottom;
       height: 900px;
       margin-bottom: 200px;
     }
-
-    .nav {
-      display: none;
-    }
-
     .mobile-nav {
       display: block;
     }

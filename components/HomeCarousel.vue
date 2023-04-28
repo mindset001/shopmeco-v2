@@ -41,7 +41,7 @@
  
 <script>
   import SsrCarousel from 'vue-ssr-carousel'
-import ssrCarouselCss from 'vue-ssr-carousel/index.css'
+  import SsrCarouselCss from 'vue-ssr-carousel/index.css'
  
   export default {
     name: 'MyComponent',
@@ -116,7 +116,11 @@ p {
   font-size: 48px;
   line-height: 58px;
   color: #350B89;
+  width: 90vw;
+  max-width: 930px;
+  margin: 0 auto;
   margin-bottom: 4rem;
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -133,7 +137,7 @@ p {
 
   .firsty{
     text-align: center;
-    font-size: 28px;
+    font-size: 2.5rem;
     padding-bottom: 20px;
     line-height: 38px;
   }
